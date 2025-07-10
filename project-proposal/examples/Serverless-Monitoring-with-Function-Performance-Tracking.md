@@ -198,12 +198,13 @@ Các ứng dụng serverless (AWS Lambda) trong thương mại điện tử gặ
 **Mục tiêu**: Xác định, đánh giá, và giảm thiểu rủi ro dự án.
 
 ### Xác Định Rủi Ro
-| Rủi Ro                         | Tác Động   | Xác Suất | Ghi Chú                             |
-|-------------------------------=|------------|----------|-------------------------------------|
+
+| Rủi Ro                        | Tác Động  | Xác Suất | Ghi Chú                              |
+|-------------------------------|-----------|----------|--------------------------------------|
 | Lỗi cấu hình hệ thống giám sát | Trung bình | 15%      | Ảnh hưởng độ tin cậy giám sát       |
-| Vượt ngân sách                 | Cao        | 30%      | Ảnh hưởng ROI dài hạn               |
-| Thiếu nhân sự                  | Thấp       | 5%       | Tìm bên thứ ba                      |
-| Lỗi tích hợp hệ thống          | Trung bình | 15%      | Ảnh hưởng giao dịch ngắn hạn        |
+| Vượt ngân sách                | Cao       | 30%      | Ảnh hưởng ROI dài hạn               |
+| Thiếu nhân sự                 | Thấp      | 5%       | Có thể thuê bên thứ ba              |
+| Lỗi tích hợp hệ thống         | Trung bình | 15%      | Ảnh hưởng giao dịch ngắn hạn        |
 
 ### Đánh Giá Tác Động và Xác Suất
 - **Lỗi cấu hình**: Gây downtime, ảnh hưởng độ tin cậy.
@@ -216,7 +217,6 @@ Các ứng dụng serverless (AWS Lambda) trong thương mại điện tử gặ
 - **Vượt ngân sách**: Đặt Budget Alerts với ngưỡng 80%.
 - **Thiếu nhân sự**: Đào tạo nội bộ hoặc thuê bên thứ ba.
 - **Lỗi tích hợp**: Thực hiện integration test kỹ lưỡng.
-
 ### Kế Hoạch Dự Phòng
 - **Sao lưu**: Cấu hình CloudWatch và Lambda vào S3 hàng tuần.
 - **Khôi phục**: Dùng CloudFormation khôi phục trong 1 giờ.
